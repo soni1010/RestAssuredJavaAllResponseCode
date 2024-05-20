@@ -36,6 +36,7 @@ public class GetRequests {
                 "\nResponse.getTime(TimeUnit.SECONDS) - "+response.getTimeIn(TimeUnit.SECONDS)+
                 "\nWe can take in Minutes,Days,Hours,Seconds,Nanoseconds,Microseconds,MilliSeconds also"+
                 "\n\nresponse.getContentType()) - "+response.getContentType()+
+
                 "\n\nresponse.getHeaders() - "+response.getHeaders()+
                 "\n\nresponse.getHeader('Report-To') - "+response.getHeader("Report-To")+
                 "\n\nresponse.getHeader('Reporting-Endpoints') - "+response.getHeader("Reporting-Endpoints")+
