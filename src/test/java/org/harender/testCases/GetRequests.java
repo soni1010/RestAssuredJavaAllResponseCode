@@ -1,6 +1,6 @@
 package org.harender.testCases;
 
-
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
@@ -98,5 +98,44 @@ public class GetRequests {
 
     }
 
+    @Test
+    public void tryGetRequestToGetIndividualFromListOfResource(){
+        System.out.println("\n===========================> Method - 'tryGetRequestToGetIndividualFromListOfResource' output below :");
+        String endPointForListOdfResources="unknown/";
+        int individualResourceID=2;
+        Response response=given().get(URL+endPointForListOdfResources+individualResourceID);
+        System.out.println("Response Time (In Milliseconds) - "+response.getTimeIn(TimeUnit.MILLISECONDS));
+        System.out.println(response.getBody().asPrettyString());
+        System.out.println("\n Content Type- "+response.getContentType()+"\n");
+        System.out.println("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|");
+
+    }
+
+    @Test
+    public void tryGetRequestToGetIndividualFromListOfResourceWithJsonPath(){
+        System.out.println("\n===========================> Method - 'tryGetRequestToGetIndividualFromListOfResourceWithJsonPath' output below :");
+        String endPointForListOdfResources="unknown/";
+        int individualResourceID=2;
+        Response response=given().get(URL+endPointForListOdfResources+individualResourceID);
+        System.out.println("|--------------------------------- JSON_Path use ---------------------------------|");
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        String dataName = jsonPathEvaluator.get("data.name");
+        System.out.println("Always use the DataType of Variable whatever it is coming in Response \nLike Here 'ID' is 'Integer' \nso we saved in 'Integer' dataType 'Variable'\n");
+        Integer dataId = jsonPathEvaluator.get("data.id");
+        String supportURL = jsonPathEvaluator.get("support.url");
+        String supportText = jsonPathEvaluator.get("support.text");
+
+        System.out.println(
+                "Name- "+dataName+
+                "\nID- "+dataId+
+                "\nSupportUrl- "+supportURL+
+                "\nSupportText- "+supportText
+        );
+
+        //System.out.println(response.getBody().asPrettyString());
+        System.out.println("\nContent Type- "+response.getContentType()+"\n");
+        System.out.println("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|");
+
+    }
 
 }

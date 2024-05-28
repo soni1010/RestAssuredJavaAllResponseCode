@@ -20,9 +20,16 @@
     <testNG.version>7.10.2</testNG.version>
     <sl4j_Simple.version>2.0.13</sl4j_Simple.version>
     <log4j_Core.version>2.23.1</log4j_Core.version>
+    <jaywayJsonPath.version>2.9.0</jaywayJsonPath.version>
   </properties>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+    <!--dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+      <version>${jaywayJsonPath.version}</version>
+    </dependency-->
     <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
