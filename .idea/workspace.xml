@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1de85b-4c16-4554-a947-75cd39061d1f" name="Changes" comment="Get Request Update">
+    <list default="true" id="ca1de85b-4c16-4554-a947-75cd39061d1f" name="Changes" comment="more Addition in GetRequests.java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/harender/testCases/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/harender/testCases/PostRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/harender/utils/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/harender/testCases/GetRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/harender/testCases/GetRequests.java" afterDir="false" />
@@ -57,6 +61,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Output.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -75,13 +80,21 @@
     "TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (4).executor": "Run",
     "TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (5).executor": "Run",
     "TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath.executor": "Run",
+    "TestNG.PostRequests.SimplePostRequest.executor": "Run",
+    "TestNG.PostRequests.SimplePostRequestWithHashMapDataToCreateRecord.executor": "Run",
+    "TestNG.PostRequests.SimplePostRequestWithJsonObjectDataToCreateRecord.executor": "Run",
+    "TestNG.PostRequests.SimplePostRequestWithPOJO_ToCreateRecord.executor": "Run",
+    "TestNG.PostRequests.executor": "Run",
+    "TestNG.PostRequests.postRequestWithAutomaticallyGeneratedID_Response (1).executor": "Run",
+    "TestNG.PostRequests.postRequestWithAutomaticallyGeneratedID_Response.executor": "Run",
+    "TestNG.Postrequests.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (5)">
-    <configuration name="GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PostRequests.SimplePostRequestWithPOJO_ToCreateRecord">
+    <configuration name="PostRequests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredJavaAllResponseCode" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +103,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.harender.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.GetRequests" />
-      <option name="METHOD_NAME" value="tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRequests.SimplePostRequestWithHashMapDataToCreateRecord" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredJavaAllResponseCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.harender.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.harender.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="METHOD_NAME" value="SimplePostRequestWithHashMapDataToCreateRecord" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -99,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRequests.SimplePostRequestWithJsonObjectDataToCreateRecord" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredJavaAllResponseCode" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.harender.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.GetRequests" />
-      <option name="METHOD_NAME" value="tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="METHOD_NAME" value="SimplePostRequestWithJsonObjectDataToCreateRecord" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRequests.SimplePostRequestWithPOJO_ToCreateRecord" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredJavaAllResponseCode" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +156,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.harender.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.GetRequests" />
-      <option name="METHOD_NAME" value="tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="METHOD_NAME" value="SimplePostRequestWithPOJO_ToCreateRecord" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,7 +165,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (5)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRequests.postRequestWithAutomaticallyGeneratedID_Response" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredJavaAllResponseCode" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +174,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.harender.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.GetRequests" />
-      <option name="METHOD_NAME" value="tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="METHOD_NAME" value="postRequestWithAutomaticallyGeneratedID_Response" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRequests.postRequestWithAutomaticallyGeneratedID_Response" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredJavaAllResponseCode" />
       <extension name="coverage">
         <pattern>
@@ -162,8 +192,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.harender.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.GetRequests" />
-      <option name="METHOD_NAME" value="tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
+      <option name="MAIN_CLASS_NAME" value="org.harender.testCases.PostRequests" />
+      <option name="METHOD_NAME" value="postRequestWithAutomaticallyGeneratedID_Response" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -173,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (5)" />
-        <item itemvalue="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath" />
-        <item itemvalue="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (4)" />
-        <item itemvalue="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (3)" />
-        <item itemvalue="TestNG.GetRequests.tryGetRequestToGetIndividualFromListOfResourceWithJsonPath (2)" />
+        <item itemvalue="TestNG.PostRequests.SimplePostRequestWithPOJO_ToCreateRecord" />
+        <item itemvalue="TestNG.PostRequests.SimplePostRequestWithJsonObjectDataToCreateRecord" />
+        <item itemvalue="TestNG.PostRequests" />
+        <item itemvalue="TestNG.PostRequests.postRequestWithAutomaticallyGeneratedID_Response" />
+        <item itemvalue="TestNG.PostRequests.SimplePostRequestWithHashMapDataToCreateRecord" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716832267870</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="more Addition in GetRequests.java">
+      <option name="closed" value="true" />
+      <created>1716910312357</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716910312357</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -262,6 +300,7 @@
     <MESSAGE value="Get Request methods which all we can have to get information from response" />
     <MESSAGE value="Changing Nae" />
     <MESSAGE value="Get Request Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get Request Update" />
+    <MESSAGE value="more Addition in GetRequests.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="more Addition in GetRequests.java" />
   </component>
 </project>

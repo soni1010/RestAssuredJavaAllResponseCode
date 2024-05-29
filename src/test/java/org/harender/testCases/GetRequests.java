@@ -1,5 +1,6 @@
 package org.harender.testCases;
 
+import com.jayway.jsonpath.ReadContext;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -117,6 +118,9 @@ public class GetRequests {
         String endPointForListOdfResources="unknown/";
         int individualResourceID=2;
         Response response=given().get(URL+endPointForListOdfResources+individualResourceID);
+        //System.out.println(response.getBody().asPrettyString());
+        System.out.println("\nContent Type- "+response.getContentType()+"\n");
+        System.out.println("\nResponse Code- "+response.getStatusCode()+"\n");
         System.out.println("|--------------------------------- JSON_Path use ---------------------------------|");
         JsonPath jsonPathEvaluator = response.jsonPath();
         String dataName = jsonPathEvaluator.get("data.name");
@@ -132,8 +136,14 @@ public class GetRequests {
                 "\nSupportText- "+supportText
         );
 
-        //System.out.println(response.getBody().asPrettyString());
-        System.out.println("\nContent Type- "+response.getContentType()+"\n");
+       // System.out.println("|--------------- Json Response Read using 'Jayway.jsonPath' Library ---------------|");
+       // response.body().prettyPrint();
+
+       // String responseAsAString=response.asString();
+       // System.out.println(responseAsAString);
+       // ReadContext ctx= com.jayway.jsonpath.JsonPath.parse(responseAsAString);
+       // System.out.println("Name- "+ctx.read("$data.name"));
+
         System.out.println("|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|");
 
     }
